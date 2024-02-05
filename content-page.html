@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Contents</title>
+    <style>
+        body {
+            font-family: 'tIMES nEW rOMAN', sans-serif;
+            background-color: #ffcccc;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+font-size: 24px;
+        }
+
+        h1 {
+            color: #cc0000;
+            margin-bottom: 20px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding: 0;
+color: #ff0000;
+        }
+    .heart {
+            position: absolute;
+            width: 30px; /* Adjust the heart size */
+            height: 30px; /* Adjust the heart size */
+            font-size: 30px; /* Adjust the heart size */
+            display: inline-block;
+        }
+
+        .red-heart {
+            color: red;
+        }
+
+        .black-heart {
+            color: black;
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066cc; /* Link color */
+        }
+    </style>
+</head>
+<body>
+  <script>
+        // Function to create a random heart and append it to the body
+        function createRandomHeart(className) {
+            // Create a div element
+            var heart = document.createElement("div");
+            heart.className = "heart " + className;
+            heart.innerHTML = "❤️"; // Heart character
+
+            // Set random position on the page
+            var xPos = Math.random() * window.innerWidth;
+            var yPos = Math.random() * window.innerHeight;
+            heart.style.left = xPos + "px";
+            heart.style.top = yPos + "px";
+
+            // Append the heart to the body
+            document.body.appendChild(heart);
+        }
+
+        // Create 5 red hearts
+        for (var i = 0; i < 5; i++) {
+            createRandomHeart("red-heart");
+        }
+
+        // Create 5 black hearts
+        for (var i = 0; i < 5; i++) {
+            createRandomHeart("black-heart");
+        }
+    </script>
+
+    <h1>Table of Contents</h1>
+
+    <ol>
+        <li><a href="html.html"> - Greetings</a></li>
+        <li><a href="third-page.html"> - Love Letter</a></li>
+        <li><a href="fourth-page.html"> - Our Pictures</a></li>
+        <li><a href="fifth-page.html"> - Our Playlist</a></li>
+        <li><a href="sixth-page.html"> - Reasons Why I Love You</a></li>
+        <li><a href="ninth-page.html"> - Our Bucket List</a></li>
+        <li><a href="tenth-page.html"> - Invite</a></li>
+        <li><a href="eleventh-page.html"> - Alphabet Dating Ideas</a></li>
+        <li><a href="thirteen-page.html"> - Goodbye</a></li>
+        <!-- Add more sections as needed -->
+    </ol>
+
+echo "# V-day-JC" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/CeeJee124578/V-day-JC.git
+git push -u origin main
+
+</body>
+</html>
+
